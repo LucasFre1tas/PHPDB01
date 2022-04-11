@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <title>Vitugo</title>
+    <title>Vitugo - <?php echo $title ?></title>
 </head>
 <body>
     <a id="top"></a>
@@ -23,7 +24,7 @@
 
                <a href="/"title="Página Inicial"><i class="fa-solid fa-house-chimney"></i><span>Inicio</span></a>
 
-               <a href="/contatos"title="Faça contato"><i class="fa-solid fa-comment-dots"></i><span>Contatos</span></a>
+               <a href="contacts/index.php"title="Faça contato"><i class="fa-solid fa-comment-dots"></i><span>Contatos</span></a>
 
                <a href="/sobre"title="Sobre.."><i class="fa-solid fa-circle-info"></i><span>Sobre</span></a>
 
