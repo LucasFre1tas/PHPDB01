@@ -14,7 +14,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/_config.php');
  *     → https://www.w3schools.com/php/php_variables.asp
  *     → https://www.php.net/manual/pt_BR/language.variables.basics.php
  */
-$title = "Quem tem fome tem pressa...";
+$title = "Faça contato";
 
 /**
  * Inclui o cabeçalho da página.
@@ -31,13 +31,37 @@ require($_SERVER['DOCUMENT_ROOT'] . '/_header.php');
 
 <section>
 
-    <h2>Título da página</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iste aliquam aperiam voluptatem
-        molestias nemo odit unde modi cupiditate exercitationem doloremque quaerat soluta rerum quidem
-        dignissimos officiis sapiente, aut alias!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio soluta voluptatum consequatur
-        voluptatibus cupiditate temporibus qui, nostrum deserunt minus laudantium in officia rem dignissimos
-        facilis modi culpa error aliquam? Quam?</p>
+    <h2>Faça contato</h2>
+
+    <form action="envia.php" method="post">
+
+<p>Preencha todos os campos para entrar em contato com a equipe do Vitugo.</p>
+
+<p>
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome" required minlength="3" value="Joca da Silva">
+</p>
+
+<p>
+    <label for="emil">E-mail:</label>
+    <input type="email" name="email" id="email" required value="joca@silva">
+</p>
+
+<p>
+    <label for="assunto">Assunto:</label>
+    <input type="text" name="assunto" id="assunto" required minlength="5" value="Assunto do Joca">
+</p>
+
+<p>
+    <label for="mensagem">Mensagem:</label>
+    <textarea name="mensagem" id="mensagem" required minlength="5">Mensagem do Joca</textarea>
+</p>
+
+<p>
+    <button type="submit">Enviar</button>
+</p>
+
+</form>
 
 </section>
 
