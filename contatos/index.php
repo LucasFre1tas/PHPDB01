@@ -6,6 +6,15 @@
  */
 require($_SERVER['DOCUMENT_ROOT'] . '/_config.php');
 
+/***********************************************
+ * Seus códigos PHP desta página iniciam aqui! *
+ ***********************************************/
+
+
+/************************************************
+ * Seus códigos PHP desta página terminam aqui! *
+ ************************************************/
+
 /**
  * Variável que define o título desta página.
  * Essa variável é usada no arquivo "_header.php".
@@ -35,33 +44,37 @@ require($_SERVER['DOCUMENT_ROOT'] . '/_header.php');
 
     <form action="envia.php" method="post">
 
-<p>Preencha todos os campos para entrar em contato com a equipe do Vitugo.</p>
+        <p>Preencha todos os campos para entrar em contato com a equipe do Vitugo.</p>
 
-<p>
-    <label for="nome">Nome:</label>
-    <input type="text" name="nome" id="nome" required minlength="3" value="Joca da Silva">
-</p>
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required minlength="3">
+            <!-- O campo é obrigatório (required) e deve ter pelo menos 3 caracteres. -->
+        </p>
 
-<p>
-    <label for="emil">E-mail:</label>
-    <input type="email" name="email" id="email" required value="joca@silva">
-</p>
+        <p>
+            <label for="emil">E-mail:</label>
+            <input type="email" name="email" id="email" required>
+            <!-- O campo é obrigatório e deve ser um e-mail (type="email"). --> 
+        </p>
 
-<p>
-    <label for="assunto">Assunto:</label>
-    <input type="text" name="assunto" id="assunto" required minlength="5" value="Assunto do Joca">
-</p>
+        <p>
+            <label for="assunto">Assunto:</label>
+            <input type="text" name="assunto" id="assunto" required minlength="5">
+            <!-- O campo é obrigatório e deve ter pelo menos 5 caracteres. -->
+        </p>
 
-<p>
-    <label for="mensagem">Mensagem:</label>
-    <textarea name="mensagem" id="mensagem" required minlength="5">Mensagem do Joca</textarea>
-</p>
+        <p>
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" required minlength="5"></textarea>
+            <!-- O campo é obrigatório e deve ter pelo menos 5 caracteres. -->
+        </p>
 
-<p>
-    <button type="submit">Enviar</button>
-</p>
+        <p>
+            <button type="submit">Enviar</button>
+        </p>
 
-</form>
+    </form>
 
 </section>
 
