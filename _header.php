@@ -24,7 +24,7 @@
 
                <a href="/"title="Página Inicial"><i class="fa-solid fa-house-chimney"></i><span>Inicio</span></a>
 
-               <a href="contacts/index.php"title="Faça contato"><i class="fa-solid fa-comment-dots"></i><span>Contatos</span></a>
+               <a href="contatos/index.php"title="Faça contato"><i class="fa-solid fa-comment-dots"></i><span>Contatos</span></a>
 
                <a href="/sobre"title="Sobre.."><i class="fa-solid fa-circle-info"></i><span>Sobre</span></a>
 
